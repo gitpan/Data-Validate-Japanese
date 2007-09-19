@@ -7,6 +7,5 @@ if (! $ENV{TEST_POD}) {
     eval "use Test::Pod::Coverage";
     plan skip_all => "Test::Pod::Coverage required for testing pod coverage" if $@;
 
-    plan tests => 1;
-    Test::Pod::Coverage::pod_coverage_ok( "XML::RSS::LibXML", "XML::RSS::LibXML is covered" );
+    Test::Pod::Coverage::all_pod_coverage_ok();
 }

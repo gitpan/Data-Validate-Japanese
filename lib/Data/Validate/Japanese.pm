@@ -1,4 +1,4 @@
-# $Id$
+# $Id: /mirror/perl/Data-Validate-Japanese/trunk/lib/Data/Validate/Japanese.pm 2553 2007-09-19T01:14:58.848056Z daisuke  $
 #
 # Copyright (c) 2007 Daisuke Maki <daisuke@endeworks.jp>
 # All rights reserved.
@@ -6,9 +6,10 @@
 package Data::Validate::Japanese;
 use strict;
 use warnings;
+use 5.008;
 use vars qw($VERSION);
 
-$VERSION = '0.01';
+$VERSION = '0.01001';
 
 my %regexps = (
     katakana => qr(\p{InKatakana}),
@@ -109,6 +110,10 @@ Checks if a value contains half-width katakana only. Returns true or false
 =head2 is_h_katakana($value)
 
 Checks if a value contains half-width katakana only. Returns true or false
+
+=head2 is_ascii($value)
+
+Checks if a value contains only ascii
 
 =head2 contains_only($value, \%candidates)
 

@@ -1,4 +1,4 @@
-# $Id$
+# $Id: /mirror/perl/Data-Validate-Japanese/trunk/Makefile.PL 2308 2007-05-19T02:27:06.295854Z daisuke  $
 #
 # Copyright (c) 2007 Daisuke Maki <daisuke@endeworks.jp>
 # All rights reserved.
